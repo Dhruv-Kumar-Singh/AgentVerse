@@ -1,0 +1,112 @@
+Build a full-stack AI web app called AI Study Buddy — an intelligent learning assistant that can explain, quiz, and schedule study topics for students using Replit AI integrations.
+
+The project should focus on creativity, reasoning, and execution through intelligent agents. It should use HTML, CSS, JavaScript (React preferred) for the frontend, and Flask/FastAPI or Node.js for backend AI routes. Use Replit’s built-in AI and database features where needed.
+
+Website Pages and Logic
+Landing Page (First Look)
+
+Top Left: Logo of the web app.
+
+Top Right: “Login” and “Sign Up” buttons.
+
+Center: A search bar with placeholder text: "Enter your Topic" (slightly blurred).
+
+Placeholder disappears when typing.
+
+Login button: Redirect to /login.
+
+Sign Up button: Redirect to /signup.
+Login Page
+
+Ask for: Email/Mobile Number and Password.
+
+“Submit” button → verifies credentials and redirects to /home.
+
+Signup Page
+
+Fields for: Email ID, Mobile Number, Password Setup.
+
+On submit → stores user credentials and redirects to /home.
+
+Home Page (After Login/Signup)
+
+Top Right: “My Profile” button.
+
+Center: Search bar (same as landing).
+
+On entering a topic and pressing “Enter”:
+
+Redirect to /topic/:topicName.
+
+Use Replit AI to generate main topic content divided into subtopics.
+
+Display subtopics as clickable buttons → each leads to /subtopic/:name.
+
+Subtopic Page (Roadmap Style)
+
+Each subtopic contains three AI-generated sections:
+
+Explanation: AI-generated detailed explanation.
+
+Examples: AI-generated examples with concept-based question-style examples.
+
+Quiz Section: Interactive multiple-choice quiz (AI-generated, easy to moderate).
+
+Each section has Next and Previous buttons for navigation.
+Quiz section has:
+
+Radio button options
+
+Submit button → shows correct/incorrect answer
+
+Updates quiz stats in user profile
+
+Profile Dashboard Page
+
+Accessed via “My Profile” → /profile.
+
+Include:
+
+User info (email, mobile, etc.) displayed in styled cards.
+
+Segmented Donut Chart showing:
+
+Total questions attempted
+
+Correct vs incorrect answers (from quiz results).
+
+History Section:
+
+Lists topics previously attempted.
+
+Each topic clickable → opens attempted questions (only those that were submitted once).
+
+AI + Replit Integration
+
+Use Replit AI SDK or Ghostwriter AI endpoints to:
+
+Generate topic content, subtopics, explanations, examples, and quizzes dynamically.
+
+Track quiz performance and update user stats.
+
+Store user data and quiz progress in Replit Database.
+
+Design Guidelines
+
+Modern, minimal UI (TailwindCSS or CSS Flexbox/Grid).
+
+Rounded corners, soft shadows, and responsive design.
+
+Keep a consistent color theme (e.g., #1E1E2E, #4ADE80, #A78BFA).
+
+Smooth transitions between sections.
+
+Judging Focus
+
+Creativity
+
+Working AI Integration
+
+Replit Database/AI Agent usage
+
+User Experience
